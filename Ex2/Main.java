@@ -1,5 +1,7 @@
 package Ex2;
 
+import javax.swing.JOptionPane;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,7 +9,7 @@ public class Main {
         
 
         do {
-            exit=JOptionPane.showInputDialog(menu());
+            exit = JOptionPane.showInputDialog(menu());
         
             switch (exit) {
                 case "1":
@@ -36,3 +38,9 @@ public class Main {
         
        
     }
+
+    public static void menu() {
+        
+    }
+
+}
