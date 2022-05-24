@@ -13,34 +13,33 @@ public class Main {
         
             switch (exit) {
                 case "1":
-                    Util.reservar();
+                    Util.cadastrarP();
                     break;
                 case "2":
-                    Util.pesquisar();
+                    Util.listarP();
                     break;
                 case "3":
-                 Util.imprimirReserva();
+                 Util.venderP();
                     break;
                 case "4":
-                  Util.imprimirEspera();
-                    break;
-                case "5":
-                  Util.cancelar();
-                    break;
-                case "6":
                     break;
                 default:
                    JOptionPane.showMessageDialog(null,"Essa opção não existe");
                     break;
             }
-        }while (!exit.equals("6"));
+        }while (!exit.equals("4"));
 
         
        
     }
 
-    public static void menu() {
-        
+    public static String menu() {
+        String aux = "Escolha uma Opção: \n";
+        aux += "1. Cadastrar Produtos \n";
+        aux += "2. Listar Produtos \n";
+        aux += "3. Vender Produto \n";
+        aux += "4. Encerrar Aplicação";
+        return aux;
     }
 
 }
