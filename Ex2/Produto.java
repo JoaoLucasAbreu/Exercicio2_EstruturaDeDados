@@ -40,8 +40,9 @@ public class Produto {
     public void diminuirEstoque(int valor){
         if(valor>qt_estoque){
             JOptionPane.showMessageDialog(null, "Estoque insuficiente("+qt_estoque+")");
-        }
+        }else{
         qt_estoque=qt_estoque-valor;
+        }
         }
 
 
